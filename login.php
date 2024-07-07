@@ -17,7 +17,7 @@ if (isset($_POST['login'])) {
     mysqli_stmt_close($stmt);
 
     // Check if the entered credentials match admin credentials
-    if ($s_id_t_id === 'admin' && $password === 'admin') {
+    if ($s_id_t_id === 'admin' && $password === 'admin123') {
         // Admin credentials are correct, admin is authenticated
         $_SESSION['user_id'] = 'admin';
         echo "<script>alert('Admin login successful')</script>";
